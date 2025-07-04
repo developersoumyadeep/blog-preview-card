@@ -12,6 +12,22 @@
   --text-preset-3: 14px;
 }
 
+@font-face {
+  font-family: 'Figtree';
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -28,6 +44,7 @@ body {
 .card {
   width: 50%;
   max-width: 384px;
+  min-width: 327px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -35,23 +52,66 @@ body {
   border: 1px solid black;
   border-radius: 20px;
   padding: var(--spacing-200);
+  box-shadow: 8px 8px 0px 0px #000000;
 }
 
-.card figure, .card figure img {
+.card .blog-image, .card .blog-image img {
   width: 100%;
 }
 
-.card figure {
+.card .blog-image {
   margin: 0 0 var(--spacing-200);
+}
+
+.card .blog-image img {
+  border-radius: 10px;
 }
 
 .card .blog-content {
   margin: 0 0 var(--spacing-200);
 }
 
-.profile-date .profile-avatar {
+.tag, .publish-date, h3{
+  margin: 0 0 var(--spacing-150) 0;
+}
+
+.tag {
+  background-color: var(--yellow);
+  display: inline-block;
+  padding: var(--spacing-50) var(--spacing-150);
+  border-radius: 4px;
+  font-family: 'Figtree';
+  font-weight: 800;
+  font-size: var(--text-preset-3);
+}
+
+.publish-date {
+  font-family: 'Figtree';
+  font-weight: 400;
+  font-size: var(--text-preset-3);
+}
+
+.blog-content h3 {
+  font-family: 'Figtree';
+  font-weight: 800;
+  font-size: var(--text-preset-1);
+}
+
+.description {
+  font-family: 'Figtree';
+  font-weight: 400;
+  font-size: var(--text-preset-2);
+  color: var(--gray-500);
+}
+
+.profile-data .profile-avatar {
+  margin: 0 var(--spacing-150) 0 0;
+}
+
+.profile-data .profile-avatar img{
   max-width: 32px;
   max-height: 32px;
+  margin: 0;
 }
 
 .profile-data {
@@ -59,6 +119,12 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.profile-data .username {
+  font-family: 'Figtree';
+  font-weight: 800;
+  font-size: var(--text-preset-3);
 }
 
 
