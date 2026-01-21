@@ -1,8 +1,8 @@
 :root {
-  --yellow: #F4D04E;
+  --yellow: #f4d04e;
   --gray-950: #111111;
-  --gray-500: #6B6B6B;
-  --white: #FFFFFF;
+  --gray-500: #6b6b6b;
+  --white: #ffffff;
   --spacing-50: 4px;
   --spacing-100: 8px;
   --spacing-150: 12px;
@@ -13,13 +13,13 @@
 }
 
 @font-face {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
   font-style: italic;
 }
@@ -55,7 +55,8 @@ body {
   box-shadow: 8px 8px 0px 0px #000000;
 }
 
-.card .blog-image, .card .blog-image img {
+.card .blog-image,
+.card .blog-image img {
   width: 100%;
 }
 
@@ -68,10 +69,12 @@ body {
 }
 
 .card .blog-content {
-  margin: 0 0 var(--spacing-200);
+  margin: var(--spacing-200) 0 var(--spacing-200);
 }
 
-.tag, .publish-date, h3{
+.tag,
+.publish-date,
+h3 {
   margin: 0 0 var(--spacing-150) 0;
 }
 
@@ -80,25 +83,25 @@ body {
   display: inline-block;
   padding: var(--spacing-50) var(--spacing-150);
   border-radius: 4px;
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 800;
   font-size: var(--text-preset-3);
 }
 
 .publish-date {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 400;
   font-size: var(--text-preset-3);
 }
 
 .blog-content h3 {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 800;
   font-size: var(--text-preset-1);
 }
 
 .description {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 400;
   font-size: var(--text-preset-2);
   color: var(--gray-500);
@@ -108,7 +111,7 @@ body {
   margin: 0 var(--spacing-150) 0 0;
 }
 
-.profile-data .profile-avatar img{
+.profile-data .profile-avatar img {
   max-width: 32px;
   max-height: 32px;
   margin: 0;
@@ -122,9 +125,7 @@ body {
 }
 
 .profile-data .username {
-  font-family: 'Figtree';
+  font-family: "Figtree";
   font-weight: 800;
   font-size: var(--text-preset-3);
 }
-
-
