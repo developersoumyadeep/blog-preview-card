@@ -1,13 +1,17 @@
-export default function BlogContent() {
+import type { Blog } from "../types/blog";
+
+type Props = {
+  blog: Blog;
+};
+export default function BlogContent({ blog }: Props) {
   return (
     <section className="blog-content">
-      <section className="tag">Learning</section>
-      <section className="publish-date">Published 21 Dec 2023</section>
-      <h3>HTML & CSS foundations</h3>
-      <section className="description">
-        These languages are the backbone of every website, defining structure,
-        content, and presentation.
+      <section className="tag">{blog.tag}</section>
+      <section className="publish-date">
+        Published {blog.date.toLocaleDateString()}
       </section>
+      <h3>{blog.title}</h3>
+      <section className="description">{blog.description}</section>
     </section>
   );
 }
